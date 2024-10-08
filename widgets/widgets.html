@@ -15,13 +15,13 @@
       <button onclick="toggleWidget(`onahelp`)">Help.</button>
       <button onclick="toggleWidget(`onacalander`)">Calendar.</button>
 
-      <div class="widgetbox" id="onacalc" style="display:none; width: fit-content; height: fit-content;">
-          <div id="title-bar">
+      <div class="widgetbox" id="onacalc" style="display:none; width: fit-content; height: fit-content; background: rgba(0,0,0,0); border: 0px;">
+          <div id="title-bar" style="border-radius: 5px; overflow: hidden;">
             Calc
             <button id="close-btn" onclick="closeButtonClick('onacalc')">X</button>
           </div>
           <div id="content" style="display: inline-block;">
-            <div class="calculator-body">
+            <div class="calculator-body" style="border-radius: 10px;">
               <div id="calculator">
                 <div id="result">0</div>
                 <button onclick="cls();">AC</button>
@@ -46,7 +46,6 @@
               <script src="calculator-widget/js/script.js"></script>
             </div>
           </div>
-          <div class="attribution-bar">Attribution</div>
         </div>
 
       <div class="widgetbox" id="onahelp" style="display:none">
@@ -55,7 +54,6 @@
             <button id="close-btn" onclick="closeButtonClick('onahelp')">X</button>
           </div>
           <div id="content">Help Content</div>
-          <div class="attribution-bar">Attribution</div>
         </div>
 
       <div class="widgetbox" id="onacalander" style="display:none">
@@ -65,7 +63,6 @@
           </div>
           <div id="content">Calendar Content</div>
           <!--  https://github.com/Ovi/js-calculator -->
-          <div class="attribution-bar">Attribution</div>
         </div>
       <script src="site.js" async defer></script>
     </body>
