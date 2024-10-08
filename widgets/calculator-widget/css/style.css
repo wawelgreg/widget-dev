@@ -1,11 +1,11 @@
-* {
+.calculator-body {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 }
 
-body {
+.calculator-body {
 	background: #ccc;
 	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -18,10 +18,9 @@ body {
 	position: relative;
 	border-radius: 7px;
 	margin: auto;
-	margin-top: 20px;
 	display: block;
 	height: auto;
-	width: 278px;
+	width: 100%;
 	background-color: rgb(255, 255, 255);
 	font-size: 0.8em;
 	padding: 5px;
@@ -68,7 +67,7 @@ body {
 	color: black;
 }
 
-button {
+.calculator-body button {
 	width: 60px;
 	height: 60px;
 	margin: 4px 2px;
@@ -80,39 +79,39 @@ button {
 	font-size: 1.4em;
 }
 
-button:active {
+.calculator-body button:active {
 	background: #bfbfbf;
 }
 
-button:nth-child(2) {
+.calculator-body button:nth-child(2) {
 	margin-left: 205px;
 	display: block;
 	background: #ef4a49;
 	color: white;
 }
 
-button:nth-child(2):active {
+.calculator-body button:nth-child(2):active {
 	background: #b14e4d;
 }
 
-button:nth-child(6),
-button:nth-child(10),
-button:nth-child(14),
-button:nth-child(17),
-button:nth-child(18) {
+.calculator-body button:nth-child(6),
+.calculator-body button:nth-child(10),
+.calculator-body button:nth-child(14),
+.calculator-body button:nth-child(17),
+.calculator-body button:nth-child(18) {
 	background: #00b49a;
 	color: white;
 }
 
-button:nth-child(6):active,
-button:nth-child(10):active,
-button:nth-child(14):active,
-button:nth-child(17):active,
-button:nth-child(18):active {
+.calculator-body button:nth-child(6):active,
+.calculator-body button:nth-child(10):active,
+.calculator-body button:nth-child(14):active,
+.calculator-body button:nth-child(17):active,
+.calculator-body button:nth-child(18):active {
 	background: #218d7e;
 }
 
-footer {
+.calculator-body footer {
 	position: absolute;
 	bottom: 0;
 	padding: 20px;
@@ -120,12 +119,12 @@ footer {
 	text-align: center;
 }
 
-a {
+.calculator-body a {
 	text-decoration: none;
 	color: inherit;
 }
 
-h1 {
+.calculator-body h1 {
 	display: inline;
 	font-size: 50px;
 	color: #131313;
@@ -143,7 +142,7 @@ h1 {
 		-27px 54px 1px #e2e0df, -28px 56px 1px #e4e3e2;
 }
 
-h1:hover {
+.calculator-body h1:hover {
 	text-shadow: 1px -1px 0 #767676, 1px 2px 1px #737272, 2px 4px 1px #767474,
 		3px 6px 1px #787777, 4px 8px 1px #7b7a7a, 5px 10px 1px #7f7d7d,
 		6px 12px 1px #828181, 7px 14px 1px #868585, 8px 16px 1px #8b8a89,

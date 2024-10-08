@@ -8,21 +8,21 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="site.css">
-        <link rel="stylesheet" href="../calculator/brain/css/style.css">
+        <link rel="stylesheet" href="calculator-widget/css/style.css">
     </head>
     <body>
       <button onclick="toggleWidget(`onacalc`)">Calc.</button>
       <button onclick="toggleWidget(`onahelp`)">Help.</button>
       <button onclick="toggleWidget(`onacalander`)">Calendar.</button>
 
-      <div class="widgetbox" id="onacalc" style="display:none">
+      <div class="widgetbox" id="onacalc" style="display:none; width: fit-content; height: fit-content;">
           <div id="title-bar">
             Calc
             <button id="close-btn" onclick="closeButtonClick('onacalc')">X</button>
           </div>
-          <div id="content">
-            <div id="calc">
-              <div id="calculator" class="calc-div">
+          <div id="content" style="display: inline-block;">
+            <div class="calculator-body">
+              <div id="calculator">
                 <div id="result">0</div>
                 <button onclick="cls();">AC</button>
                 <button onclick="num(this.innerHTML);">7</button>
@@ -43,7 +43,7 @@
                 <button onclick="calc(this.innerHTML);">+</button>
                 <div id="smallResult"></div>
               </div>
-              <script src="../calculator/brain/js/script.js"></script>
+              <script src="calculator-widget/js/script.js"></script>
             </div>
           </div>
           <div class="attribution-bar">Attribution</div>
