@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="site.css">
+        <link rel="stylesheet" href="../calculator/brain/css/style.css">
+    </head>
+    <body>
+      <button onclick="toggleWidget(`onacalc`)">Calc.</button>
+      <button onclick="toggleWidget(`onahelp`)">Help.</button>
+      <button onclick="toggleWidget(`onacalander`)">Calendar.</button>
+
+      <div class="widgetbox" id="onacalc" style="display:none">
+          <div id="title-bar">
+            Calc
+            <button id="close-btn" onclick="closeButtonClick('onacalc')">X</button>
+          </div>
+          <div id="content">
+            <div id="calc">
+              <div id="calculator" class="calc-div">
+                <div id="result">0</div>
+                <button onclick="cls();">AC</button>
+                <button onclick="num(this.innerHTML);">7</button>
+                <button onclick="num(this.innerHTML);">8</button>
+                <button onclick="num(this.innerHTML);">9</button>
+                <button onclick="calc(this.innerHTML);">/</button>
+                <button onclick="num(this.innerHTML);">4</button>
+                <button onclick="num(this.innerHTML);">5</button>
+                <button onclick="num(this.innerHTML);">6</button>
+                <button onclick="calc(this.innerHTML);">*</button>
+                <button onclick="num(this.innerHTML);">1</button>
+                <button onclick="num(this.innerHTML);">2</button>
+                <button onclick="num(this.innerHTML);">3</button>
+                <button onclick="calc(this.innerHTML);">-</button>
+                <button onclick="num(this.innerHTML);">0</button>
+                <button onclick="num(this.innerHTML);">.</button>
+                <button onclick="total();">=</button>
+                <button onclick="calc(this.innerHTML);">+</button>
+                <div id="smallResult"></div>
+              </div>
+              <script src="../calculator/brain/js/script.js"></script>
+            </div>
+          </div>
+          <div class="attribution-bar">Attribution</div>
+        </div>
+
+      <div class="widgetbox" id="onahelp" style="display:none">
+          <div id="title-bar">
+            Help
+            <button id="close-btn" onclick="closeButtonClick('onahelp')">X</button>
+          </div>
+          <div id="content">Help Content</div>
+          <div class="attribution-bar">Attribution</div>
+        </div>
+
+      <div class="widgetbox" id="onacalander" style="display:none">
+          <div id="title-bar">
+            Calendar
+            <button id="close-btn" onclick="closeButtonClick('onacalander')">X</button>
+          </div>
+          <div id="content">Calendar Content</div>
+          <!--  https://github.com/Ovi/js-calculator -->
+          <div class="attribution-bar">Attribution</div>
+        </div>
+      <script src="site.js" async defer></script>
+    </body>
+</html>
