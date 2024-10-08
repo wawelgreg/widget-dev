@@ -50,6 +50,14 @@ function closeButtonClick(elemName){
   x.style.display = "none";
 }
 
+document.onkeydown = function(evt) {
+  evt = evt || window.event;
+  if (evt.keyCode == 27) {
+    document.getElementById("onacalc").style.display = "none";
+    document.getElementById("onahelp").style.display = "none";
+    document.getElementById("onacalander").style.display = "none";
+  }
+};
 
 
 // document.getElementById("close-btn").onclick = function() {
