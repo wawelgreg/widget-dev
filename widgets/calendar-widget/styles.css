@@ -4,20 +4,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+/* body {
     display: flex;
     background: #ef62da;
     min-height: 100vh;
     padding: 0 10px;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .calendar-container {
     background: #fff;
-    width: 450px;
+    width: 300px;
     border-radius: 10px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
 .calendar-container header {
@@ -58,7 +58,7 @@ header .calendar-current-date {
 }
 
 .calendar-body {
-    padding: 20px;
+    padding: 5px;
 }
 
 .calendar-body ul {
